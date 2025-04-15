@@ -100,21 +100,90 @@
    <div>
     <label for="genero">Qual a sua identidade de gênero</label>
     <div class="radio">
-        <input type="radio" value="Mulher-Cis" name="genero" />
-        <label for="Mulher-Cis">Mulher Cis</label>
+        <input type="radio" value="Feminino" name="genero" />
+        <label for="Feminino">Feminino</label>
     </div>
     <div class="radio">
-        <input type="radio" value="Homem-Cis" name="genero" />
-        <label for="Homem-Cis">Homem Cis</label>
+        <input type="radio" value="Masculino" name="genero" />
+        <label for="Masculino">Masculino</label>
    </div>
    <div class="radio">
-    <input type="radio" value="Mulher-Trans" name="genero" />
-    <label for="Mulher-Trans">Mulher Trans</label>
+    <input type="radio" value="Nao-Binario" name="genero" />
+    <label for="Nao-Binario">Não Binário</label>
     </div>
     <div class="radio">
-        <input type="radio" value="Homem-Trans" name="genero" />
-        <label for="Homem-Trans">Homem Trans</label>
+        <input type="radio" value="Prefiro-Nao-Informar" name="genero" />
+        <label for="Prefiro-Nao-Informar">Prefiro não informar</label>
         </div>
+   </div>
+
+        <!-- Input Checkbox -->
+
+        <div>
+            <label for="linguasestrangeiras">Quais linguas você pretende estudar:</label>
+        <div class="radio">
+            <input type="checkbox" name="linguasestrangeiras" value="ingles">
+            <label for="ingles">Inglês</label>
+        </div>
+            <div class="radio">
+                <input type="checkbox" name="linguasestrangeiras" value="Espanhol">
+                <label for="Espanhol">Espanhol</label>
+            </div>
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrangeiras" value="Alemao">
+                    <label for="Alemao">Alemão</label>
+            
+            </div>
+
+            <!-- Input Data -->
+             <div>
+                <label for="datadenascimento">Data de Nascimento</label>
+                <input type="date" name="data"/>
+            </div>
+
+            <!-- Input File -->
+             <div>
+                <label for="arquivo">Insira o seu currículo em PDF</label>
+                <input type="file" name="arquivo">
+             </div>
+
+
+        <!-- Input Number -->
+ <div>
+    <label for="certificados">Quantos certificados você possui ?</label>
+    <input type="number" name="certificados">
+ </div>
+
+        <!-- Input E-mail-->
+         <div>
+            <label for="emailinserido">Insira o seu e-mail:</label>
+            <input type="email" name="emailinserido">
+         </div>
+
+         <!-- Atributo Value -->
+          <div>
+            <label for="confirmaraula">Você assistiu a aula de treinamento da empresa abaixo:</label>
+            <input type="text" value="Confirmo que assisti!" name="confirmaraula">
+          </div>
+
+          <!-- Atributo Disabled -->
+           <div>
+            <p>Informe seu RG: </p>
+            <input type="text" value="Não precisa preencher" disabled>
+           </div>
+
+            <!-- Atributo Placeholder -->
+             <div>
+                <label for="pesquisa">Como você achou o nosso site?</label>
+                <input type="text" name="pesquisa" placeholder="No Google ou Instagram">
+             </div>
+
+             <!-- Atributo Required -->
+             <div>
+                <label for="sobrenome">Digite o seu sobrenome</label>
+                <input type="text" name="sobrenome" placeholder="Sobrenome Completo" required>
+             </div>
+
 
   <!-- Limpando/Resetando o Formulário-->
    <input type="reset" value="Limpar" />
@@ -124,6 +193,7 @@
          <input type="submit" value="Enviar" />
          
     </form>
+    
     
 </body>
 </html>
